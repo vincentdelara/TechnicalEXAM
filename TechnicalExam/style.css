@@ -1,0 +1,192 @@
+@font-face {
+  font-family: MeltixReg;
+  src: url(/TechnicalExam/Resources/Fonts/meltix/Meltix_Regular_Demo.otf);
+}
+
+/*HEADER STYLE START*/
+
+#header .navbar {
+  background-color: #022989; /*header bg color*/
+}
+
+#header .nav-link{
+  color: #ffffff; /*links color*/
+}
+
+.datetoday{/*date*/
+  margin-top: 10px;
+  color: #ffffff;
+  display: inline;
+}
+
+.line{/*signup login separator line*/
+  content: "";
+  width: 1px; 
+  height: 15px; 
+  background-color: #ffffff; 
+  margin-top: 12px;
+}
+
+.button-logo{
+  margin-top: -2px;
+  margin-right: 5px;
+}
+
+.notifinquiry{ /*align right*/
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.headertxt { /*active notif inqr txt*/
+  display: inline; 
+}
+
+@media (max-width: 768px) { 
+
+  .headertxt {/*inactive notif inqr txt*/
+    display: none;
+  }
+
+  .button-logo {
+    display: inline;
+  }
+
+  .datetoday{/*inactive date*/
+    display: none;
+  } 
+
+  .notifinquiry{/*align right notif inquir*/
+    margin-left: 0;
+    margin-right: auto;
+  }
+}
+/*HEADER STYLE END*/
+
+
+
+
+/*NAVIGATION STYLE START*/
+
+/*navigation space between*/
+.navbar-nav .nav-item:not(:last-child) .nav-link {
+  margin-right: 50px;
+}
+
+/*nav link*/
+#navigation .nav-link{
+  font-size: 19px;
+  font-weight: 400;
+}
+
+
+/*custom burger button*/
+.navbar .navbar-toggler {
+  color: transparent;
+  border-color: transparent;
+}
+/*custom burger button*/
+.burger {
+  display: inline-block;
+  cursor: pointer;
+}
+/*custom burger button*/
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+
+@media (max-width: 1199px) { 
+  /*navlink font size*/
+  .navbar-nav .nav-item:not(:last-child) .nav-link {
+    margin-right: 20px;
+  }
+}
+/*NAVIGATION STYLE END*/
+
+
+
+
+/*CAROUSEL BANNER STYLE START*/
+
+
+.carousel-inner { 
+  height: 80vh;
+  background-color: black;
+}
+
+#banner .carousel-container { 
+  height: 80vh;  
+  padding: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  position: relative;
+}
+
+
+.bgimg{ 
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+}
+
+
+#banner h1{
+  font-family: MeltixReg;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-size: clamp(2rem,2.7vw,3rem);
+}
+
+
+#banner p{
+  color: rgb(255, 255, 255);
+  text-transform: uppercase; 
+  font-size: clamp(.9rem,1.5vw,1.375rem);
+}
+
+#banner .green-text {
+  color: #2ad319;
+  margin-left: 6px;
+}
+
+#banner .btn{
+  border-radius: 0%;
+  margin-top: 20px;
+  font-size: 19px;
+}
+
+
+.carousel-indicators {
+  bottom: 20px; 
+}
+
+.carousel-indicators button {
+  width: 20px !important; 
+  height: 20px !important;
+  border: 2px solid #ffffff !important;
+  border-radius: 50% !important; 
+  background-color: #635a5a00 !important; 
+  margin: 0 5px !important; 
+}
+
+.carousel-indicators .active {
+  background-color: #2ad319 !important;
+  border: 2px solid #ffffff00 !important;
+}
+
+
+
+@media (max-width: 660px) { 
+  .green-text {
+    display: block;
+    margin-top: 5px; 
+  }
+
+}
+
+/*CAROUSEL BANNER STYLE END*/
