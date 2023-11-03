@@ -1,6 +1,12 @@
 @font-face {
   font-family: MeltixReg;
   src: url(/TechnicalExam/Resources/Fonts/meltix/Meltix_Regular_Demo.otf);
+
+}
+
+@font-face {
+  font-family: Ubuntu;
+  src: url(/TechnicalExam/Resources/Fonts/meltix/Ubuntu-Regular.ttf);
 }
 
 /*HEADER STYLE START*/
@@ -76,6 +82,7 @@
 #navigation .nav-link{
   font-size: 19px;
   font-weight: 400;
+  color: #523d3d;
 }
 
 
@@ -111,14 +118,12 @@
 
 
 /*CAROUSEL BANNER STYLE START*/
-
-
-.carousel-inner { 
+.carousel-inner { /*carousel size*/
   height: 80vh;
   background-color: black;
 }
 
-#banner .carousel-container { 
+#banner .carousel-container { /*carousel content*/
   height: 80vh;  
   padding: 5%;
   margin-left: 5%;
@@ -127,7 +132,7 @@
 }
 
 
-.bgimg{ 
+.bgimg{ /*bg coverage*/
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -135,7 +140,7 @@
 }
 
 
-#banner h1{
+#banner h1{/*carousel text content*/
   font-family: MeltixReg;
   color: rgb(255, 255, 255);
   text-transform: uppercase;
@@ -143,29 +148,25 @@
 }
 
 
-#banner p{
+#banner p{/*carousel text content*/
   color: rgb(255, 255, 255);
   text-transform: uppercase; 
   font-size: clamp(.9rem,1.5vw,1.375rem);
 }
 
-#banner .green-text {
+#banner .green-text {/*greentext*/
   color: #2ad319;
   margin-left: 6px;
 }
 
-#banner .btn{
+#banner .btn{ /*button in first slide*/
   border-radius: 0%;
   margin-top: 20px;
   font-size: 19px;
 }
 
 
-.carousel-indicators {
-  bottom: 20px; 
-}
-
-.carousel-indicators button {
+.carousel-indicators button { /*circle indicators*/
   width: 20px !important; 
   height: 20px !important;
   border: 2px solid #ffffff !important;
@@ -173,7 +174,6 @@
   background-color: #635a5a00 !important; 
   margin: 0 5px !important; 
 }
-
 .carousel-indicators .active {
   background-color: #2ad319 !important;
   border: 2px solid #ffffff00 !important;
@@ -182,7 +182,7 @@
 
 
 @media (max-width: 660px) { 
-  .green-text {
+  .green-text { /*add space*/
     display: block;
     margin-top: 5px; 
   }
@@ -190,3 +190,201 @@
 }
 
 /*CAROUSEL BANNER STYLE END*/
+
+
+
+/*SERVICE STYLE START*/
+
+#service{
+  padding: 50px;
+}
+
+.section_title{/*thurston title*/
+  font-size: 58px;
+  color: #022989;
+  font-family: Ubuntu;
+}
+
+.centered{ /*center*/
+  display: flex;
+  justify-content: center;
+}
+
+.s-icon{/*card container*/
+  padding: 20px;
+  }
+
+.s-icon .icon img {/*card icon*/
+  height: 100px;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.box-title{ /*card title*/
+  color: #523d3d;
+  font-family: Ubuntu;
+}
+.box-desciption{  /*card desc..*/
+  font-size: 17px;
+  color: #523d3d;
+  font-family: Ubuntu;
+}
+hr {/* line*/
+  color: #000; 
+  background-color: #000; 
+  height: 1px;
+  width: 187px;
+  border: none; 
+  margin: 0 auto;
+}
+
+.centered{
+  display: flex;
+  justify-content: center;
+}
+
+/*SERVICE STYLE END*/
+
+
+
+
+/*CONTACT US START*/
+#contactus{/*contact us section*/
+  background-color: #e9edf8;
+  padding: 40px;
+}
+.c-title{/*contact us title*/
+  font-size: 58px;
+  color: #022989;
+  font-family: Ubuntu;
+  margin: 40px 0;
+
+}
+
+.git{/*h2 of 2 cols*/
+  color: #022989;
+  margin-bottom: 5px;
+  font-size: 19px;
+  font-family: Ubuntu;
+}
+
+.fillup{/*h4 of 2 cols*/
+  margin-bottom: 5px;
+  font-size: 19px;
+  font-family: Ubuntu;
+}
+
+#contactus  .form-control {/*form*/
+  border: 1px solid #d9d9d9;
+  margin: 12px;
+  border-radius: 0%;
+}
+
+#contactus .form-control::placeholder {/*form placeholder*/
+  color: #d9d9d9;  
+  font-family: Ubuntu;
+}
+
+
+#contactus button.btn-custom {/*form submit button*/
+  background-color: #022989; 
+  color: #FFF; 
+  border-color: #022989; 
+  border-radius: 0%;
+  margin-left: 12px;
+  width: 200px;
+  font-family: Ubuntu;
+}
+
+.indented{/*put indention in loc add*/
+  margin-bottom: 5px;
+  font-size: 19px;
+  font-family: Ubuntu;
+  text-indent: 30px;
+}
+
+#contactus .btn-custom:hover,
+#contactus button.btn-custom:focus {/*submit bttn hover*/
+  background-color: #01216f; 
+  color: #FFF; 
+  border-color: #01216f; 
+}
+
+
+@media (max-width: 767px) { 
+
+  #contactus {/*center contents*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  #contactus .container {
+    width: 100%;
+  }
+  
+  #contactus .row {/*cnter contents*/
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  #contactus .mb-4 {
+    margin: 1rem;
+  }
+  
+  #contactus .indented {/*remove indention*/
+    text-indent: 0px;
+  }
+  
+}
+/*CONTACT US END*/
+
+
+
+/*FOOTER US START*/
+.ft{/*footer custom*/
+  background-color: #494949;
+  height: 80px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+#footer small{/*all right reserve...*/
+  display: flex;
+  justify-content: start; 
+  padding-top: 4px;
+  font-family: Ubuntu;
+}
+
+.social-icons{/*social media icons*/
+  display: flex;
+  justify-content: end; 
+}
+
+.f-icons{/*icons spacing*/
+  margin-left: 20px;
+}
+
+
+@media (max-width: 767px) { 
+  #footer small{ /*align center allright reserv...*/
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+
+  }
+  .social-icons{/*align center icons*/
+    display: flex;
+    justify-content: center; 
+  }
+  
+}
+
+/*FOOTER US END*/
