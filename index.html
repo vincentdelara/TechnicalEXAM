@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thurston Global Solution Inc.</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+
+
+  <!--NAVIGATION BAR-->
+  <section id="navigation">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+
+        <!--LOGO-->
+        <a class="navbar-brand" href="#">
+          <img src="/TechnicalExam/Resources/Images/Logo.png" alt="logo" width="auto" height="63px">
+        </a>
+
+        <!--COLLAPSE HAMBURGER BUTTON -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <div class="burger">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </button>
+
+        <!--NAVIGATION LINKS-->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Our Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">FAQ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+  <!--HEADER-->
+  <section id="header">
+    <nav class="navbar">
+      <div class="container">
+
+        <!--DATE-->
+        <p class="datetoday" id="current-date">January 8, 2018</p>
+
+        <!--HEADER NAVIGATION-->
+        <ul class="nav notifinquiry">
+
+          <!--NOTIFICATION-->
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <img src="/TechnicalExam/Resources/Images/notif.png" alt="Button Logo" class="button-logo">
+              <span class="headertxt">Notification</span>
+            </a>
+          </li>
+
+          <!--INQUIRY-->
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <img src="/TechnicalExam/Resources/Images/email.png" alt="Button Logo" class="button-logo">
+              <span class="headertxt">Inquiry</span>
+            </a>
+          </li>
+        </ul>
+
+
+        <ul class="nav">
+          <!--SIGN UP-->
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sign Up</a>
+          </li>
+
+          <!--LOGIN-->
+          <li class="nav-item line"></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Login</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    </div>
+  </section>
+
+
+
+
+
+  <!--CAROUSEL-->
+  <section id="banner">
+
+    <div id="bannercarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+      <div class="carousel slide carousel-fade">
+        <!--banner indicator-->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#bannercarousel" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#bannercarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#bannercarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#bannercarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+
+        <!--banner slide-->
+        <div class="carousel-inner">
+
+          <!--slide 0-->
+          <div class="carousel-item active">
+            <div class="bgimg" style="background-image: url(/TechnicalExam/Resources/Images/carouselbg/bg2.svg);">
+              <div class="carousel-container text-center d-flex flex-column justify-content-center align-items-center">
+                <h1>WE PROVIDE PROPER<span class="green-text">IT SOLUTIONS</span></h1>
+                <p>OPTIMIZE SYSTEMS USING OUR YEARS OF EXPERIENCE</p>
+                <button type="button" class="btn btn-outline-light">Read More</button>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 1-->
+          <div class="carousel-item">
+            <div class="bgimg" style="background-image: url(/TechnicalExam/Resources/Images/carouselbg/bg1.jpg);">
+              <div class="carousel-container text-center d-flex flex-column justify-content-center align-items-center">
+                <h1>It’s all about the applications</h1>
+                <p>It’s all about the applications</p>
+
+              </div>
+            </div>
+          </div>
+
+
+          <!--slide 2-->
+          <div class="carousel-item">
+            <div class="bgimg" style="background-image: url(/TechnicalExam/Resources/Images/carouselbg/bg3.jpg);">
+              <div class="carousel-container text-center d-flex flex-column justify-content-center align-items-center">
+                <h1>We offer powerful collaboration</h1>
+                <h1>between the client and our team</h1>
+              </div>
+            </div>
+          </div>
+
+          <!--slide 3-->
+          <div class="carousel-item">
+            <div class="bgimg" style="background-image: url(/TechnicalExam/Resources/Images/carouselbg/bg4.jpg);">
+              <div class="carousel-container text-center d-flex flex-column justify-content-center align-items-center">
+                <h1>We redefine, redesign, and remodel</h1>
+                <h1>your business using the latest</h1>
+                <h1>technology available</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="about">
+    <div class="container reveal">
+      <div class="row">
+        <div class="col-12 col-md-4 text-center">
+          <div class="logoabout">
+            <img src="/TechnicalExam/Resources/Images/Logo.png" class="aboutlogo img-fluid" alt="">
+          </div>
+        </div>
+        <div class="col-12 col-md-8 thurs-des">
+          <h2 class="a-title">ABOUT THURSTON</h2>
+          <p class="a-des">Thurston Software Solutions Inc.
+            is a proud partner of NewTec Insurance Systems which
+            provides key software solutions to the Medical
+            and Insurance industry. Together our dedicated teams
+            work together to provide policy management solutions
+            with over 20 years of expertise in the medical, worker’s
+            comp, auto, property, and casualty industries.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!--SERVICE SECTION-->
+  <section id="service">
+    <div class="container">
+      <h2 class="section_title text-center reveal">Thurston Services</h2><!--title-->
+      <div class="centered reveal">
+        <hr>
+      </div>
+
+      <!--services card-->
+      <div class="row">
+
+        <!--Insurance System card-->
+        <div class="col-md-4 reveal">
+          <div class="s-box text-center hoverit">
+            <div class="s-icon">
+              <div class="icon">
+                <img src="/TechnicalExam/Resources/Images/64/insurance.png" class="iconimg" alt="">
+              </div>
+              <h4 class="box-title">Insurance Systems</h4>
+              <div class="box-desciption">
+                Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Sed orci enim,
+                posuere sed tincidunt et.</div>
+            </div>
+          </div>
+        </div>
+        <!--Management Systems card-->
+        <div class="col-md-4 reveal">
+          <div class="s-box text-center hoverit">
+            <div class="s-icon">
+              <div class="icon">
+                <img src="/TechnicalExam/Resources/Images/64/management.png" class="iconimg" alt="">
+              </div>
+              <h4 class="box-title">Management Systems</h4>
+              <div class="box-desciption">
+                Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Sed orci enim,
+                posuere sed tincidunt et.</div>
+            </div>
+          </div>
+        </div>
+        <!--Medical Billing card-->
+        <div class="col-md-4 reveal">
+          <div class="s-box text-center hoverit">
+            <div class="s-icon">
+              <div class="icon">
+                <img src="/TechnicalExam/Resources/Images/64/medical_billing.png" class="img-fluid" alt="">
+              </div>
+              <h4 class="box-title">Medical Billing</h4>
+              <div class="box-desciption">
+                Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Sed orci enim,
+                posuere sed tincidunt et.</div>
+            </div>
+          </div>
+        </div>
+        <!--E-Commerce card-->
+        <div class="col-md-4 reveal">
+          <div class="s-box text-center hoverit">
+            <div class="s-icon">
+              <div class="icon">
+                <img src="/TechnicalExam/Resources/Images/64/ecom.png" class="iconimg" alt="">
+              </div>
+              <h4 class="box-title">E-Commerce</h4>
+              <div class="box-desciption">
+                Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Sed orci enim,
+                posuere sed tincidunt et.</div>
+            </div>
+          </div>
+        </div>
+        <!--3D Animations card-->
+        <div class="col-md-4 reveal">
+          <div class="s-box text-center hoverit">
+            <div class="s-icon">
+              <div class="icon">
+                <img src="/TechnicalExam/Resources/Images/64/3d.png" class="iconimg" alt="">
+              </div>
+              <h4 class="box-title">3D Animations</h4>
+              <div class="box-desciption">
+                Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Sed orci enim,
+                posuere sed tincidunt et.</div>
+            </div>
+          </div>
+        </div>
+        <!--Website Design card-->
+        <div class="col-md-4 reveal">
+          <div class="s-box text-center hoverit">
+            <div class="s-icon">
+              <div class="icon">
+                <img src="/TechnicalExam/Resources/Images/64/webd.png" class="img-fluid" alt="">
+              </div>
+              <h4 class="box-title">Website Design</h4>
+              <div class="box-desciption">
+                Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Sed orci enim,
+                posuere sed tincidunt et.</div>
+            </div>
+          </div>
+        </div>
+        <!--Accounting Systems card-->
+        <div class="col-md-4 reveal">
+          <div class="s-box text-center hoverit">
+            <div class="s-icon">
+              <div class="icon">
+                <img src="/TechnicalExam/Resources/Images/64/accsys.png" class="iconimg" alt="">
+              </div>
+              <h4 class="box-title">Accounting Systems</h4>
+              <div class="box-desciption">
+                Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Sed orci enim,
+                posuere sed tincidunt et.</div>
+            </div>
+          </div>
+        </div>
+        <!--Support card-->
+        <div class="col-md-4 reveal">
+          <div class="s-box text-center hoverit">
+            <div class="s-icon">
+              <div class="icon">
+                <img src="/TechnicalExam/Resources/Images/64/supp.png" class="iconimg" alt="">
+              </div>
+              <h4 class="box-title">Support</h4>
+              <div class="box-desciption">
+                Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Sed orci enim,
+                posuere sed tincidunt et.</div>
+            </div>
+          </div>
+        </div>
+        <!--Cloud Service card-->
+        <div class="col-md-4 reveal">
+          <div class="s-box text-center hoverit">
+            <div class="s-icon">
+              <div class="icon">
+                <img src="/TechnicalExam/Resources/Images/64/cloud.png" class="img-fluid" alt="">
+              </div>
+              <h4 class="box-title">Cloud Service</h4>
+              <div class="box-desciption">
+                Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Sed orci enim,
+                posuere sed tincidunt et.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!--TEAM SECTION-->
+  <section id="team">
+    <div class="yeah">
+      <div class="wrapper">
+        <div class="t-title reveal">Our Team</div>
+        <ul class="carousel reveal">
+          <li class="card">
+            <div class="img"><img src="/TechnicalExam/Resources/Images/user.jpg" alt="img" draggable="false"></div>
+            <h2>Elmer Amore</h2>
+            <span>Front End Developer</span>
+          </li>
+          <li class="card">
+            <div class="img"><img src="/TechnicalExam/Resources/Images/user1.jpg" alt="img" draggable="false"></div>
+            <h2>Lui Nicanor</h2>
+            <span>Team Leader</span>
+          </li>
+          <li class="card">
+            <div class="img"><img src="/TechnicalExam/Resources/Images/user2.jpg" alt="img" draggable="false"></div>
+            <h2>Rae Lustre</h2>
+            <span>Project Manager</span>
+          </li>
+          <li class="card">
+            <div class="img"><img src="/TechnicalExam/Resources/Images/user3.jpg" alt="img" draggable="false"></div>
+            <h2>Pau Stark</h2>
+            <span>Web Developer</span>
+          </li>
+          <li class="card">
+            <div class="img"><img src="/TechnicalExam/Resources/Images/user1.jpg" alt="img" draggable="false"></div>
+            <h2>Kristina Zasiadko</h2>
+            <span>Java Developer</span>
+          </li>
+          <li class="card">
+            <div class="img"><img src="/TechnicalExam/Resources/Images/user.jpg" alt="img" draggable="false"></div>
+            <h2>Donald Horton</h2>
+            <span>App Designer</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!--CONTACT SECTION-->
+  <section id="contactus">
+    <div class="container">
+      <h2 class="c-title centered reveal">Contact Us</h2><!--title-->
+      <div class="row reveal">
+        <div class="col-md-5 order-2 order-md-1 mb-4">
+          <!--get in touch section-->
+          <h4 class="git">Get in touch!</h4>
+          <h5 class="fillup">For any question, please fill out all fields.</h5>
+          <div class="mb-3">
+            <input type="text" class="form-control" id="" placeholder="Your Name">
+            <input type="email" class="form-control" id="" placeholder="Your Email Address">
+            <input type="text" class="form-control" id="" placeholder="Type of Service">
+            <textarea class="form-control" id="" rows="3" placeholder="Message"></textarea>
+            <button type="button" class="btn btn-custom">Submit</button>
+          </div>
+        </div>
+        <!--maps section-->
+        <div class="col-md-7 order-1 order-md-2 ">
+          <h4 class="git">Thurston Software Solutions, Inc.</h4>
+          <h5 class="indented">3rd Flr. Glialcon Bldg., #5 F. Blumentritt, San Juan City</h5>
+          <iframe style="width: 100%;height: 300px;border: 1px solid rgba(0, 0, 0, 0.1);"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1577.1166044318554!2d121.02583096784589!3d14.601906565527495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9d6693aaaab%3A0x2cc3f0baefef5a0d!2sThurston%20Software%20Solutions%2C%20Inc.!5e0!3m2!1sen!2sph!4v1699010113424!5m2!1sen!2sph"
+            width="640" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!--FOOTER-->
+  <section id="footer">
+    <footer class="ft">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 order-2 order-md-1">
+            <small>© 2017 Thurston Software Solutions, Inc. All Rights Reserved.</small><!--all right reserv..-->
+          </div>
+          <div class="col-md-6 order-1 order-md-4">
+            <!--social media icons-->
+            <div class="social-icons">
+              <a href=""><img src="/TechnicalExam/Resources/Images/fb.png" alt="" class="f-icons"></a>
+              <a href=""><img src="/TechnicalExam/Resources/Images/twitter.png" alt="" class="f-icons"></a>
+              <a href=""><img src="/TechnicalExam/Resources/Images/instagram.png" alt="" class="f-icons"></a>
+              <a href=""><img src="/TechnicalExam/Resources/Images/linkedin.png" alt="" class="f-icons"></a>
+              <a href=""><img src="/TechnicalExam/Resources/Images/g+.png" alt="" class="f-icons"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+
+
+  <script type="text/javascript">
+    window.addEventListener('scroll', reveal)
+
+    function reveal() {
+      var reveals = document.querySelectorAll('.reveal')
+
+      for (var i = 0; i < reveals.length; i++) {
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if (revealtop < windowheight - revealpoint) {
+          reveals[i].classList.add('active')
+        }
+        else {
+          reveals[i].classList.remove('active')
+        }
+      }
+    }
+  </script>
+
+</body>
+
+</html>

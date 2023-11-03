@@ -10,32 +10,41 @@
 }
 
 /*HEADER STYLE START*/
+#header{ /*header position*/
+position: absolute;
+z-index: 2;
+width: 100vw;
+top: 100px;
+}
 
-#header .navbar {
-  background-color: #022989; /*header bg color*/
+#header .navbar { /*transparent*/
+  background-color: #00000000;
 }
 
 #header .nav-link{
-  color: #ffffff; /*links color*/
+  color: #ffffff78; /*links color*/
 }
 
 .datetoday{/*date*/
   margin-top: 10px;
-  color: #ffffff;
+  color: #ffffff83;
   display: inline;
+  margin-left: 20px;
+  font-family: Ubuntu;
 }
 
 .line{/*signup login separator line*/
   content: "";
   width: 1px; 
   height: 15px; 
-  background-color: #ffffff; 
+  background-color: #ffffff86; 
   margin-top: 12px;
 }
 
 .button-logo{
   margin-top: -2px;
   margin-right: 5px;
+  opacity: .5;
 }
 
 .notifinquiry{ /*align right*/
@@ -74,16 +83,33 @@
 /*NAVIGATION STYLE START*/
 
 /*navigation space between*/
+#navigation{/*position*/
+  position: absolute;
+  z-index: 1;
+  background-color: #3a80bd6d !important;
+}
+
+#navigation .navbar{
+  width: 100vw;
+}
 .navbar-nav .nav-item:not(:last-child) .nav-link {
-  margin-right: 50px;
+  margin-right: 40px;
 }
 
 /*nav link*/
 #navigation .nav-link{
   font-size: 19px;
   font-weight: 400;
-  color: #523d3d;
+  color: #ffffff;
+  font-family: Ubuntu;
 }
+
+/* hover links */
+#navigation .nav-link:hover {
+  color: #ffffff; 
+  font-weight: bold;
+}
+
 
 
 /*custom burger button*/
@@ -118,13 +144,17 @@
 
 
 /*CAROUSEL BANNER STYLE START*/
+#banner{
+  position: relative;
+  z-index: 0;
+}
 .carousel-inner { /*carousel size*/
-  height: 80vh;
+  height: 100vh;
   background-color: black;
 }
 
 #banner .carousel-container { /*carousel content*/
-  height: 80vh;  
+  height: 100vh;  
   padding: 5%;
   margin-left: 5%;
   margin-right: 5%;
@@ -155,7 +185,7 @@
 }
 
 #banner .green-text {/*greentext*/
-  color: #2ad319;
+  color: #13ba04;
   margin-left: 6px;
 }
 
@@ -175,7 +205,7 @@
   margin: 0 5px !important; 
 }
 .carousel-indicators .active {
-  background-color: #2ad319 !important;
+  background-color: rgba(241, 245, 241, 0.298) !important;
   border: 2px solid #ffffff00 !important;
 }
 
@@ -191,12 +221,75 @@
 
 /*CAROUSEL BANNER STYLE END*/
 
+/*ABOUT*/
+
+#about .container{
+  display: flex;
+  min-height: 300px;
+  align-items: center;
+  justify-content: center;
+}
+.a-title{
+  font-family: Ubuntu;
+  font-weight: bold;
+}
+.a-des{
+  font-family: Ubuntu;
+  text-indent: 30px;
+}
+#about .row{
+  margin: 50px;
+}
+
+.aboutlogo {
+  height: 40%;
+  width: auto;
+}
+.logoabout {
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center; 
+  height: 100%; 
+  margin-right: 50px;
+}
+
+.logoabout img {
+  max-height: 100%;
+}
+@media (max-width: 767px) { 
+  .logoabout {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; 
+    margin-bottom: 80px;
+  }
+  .a-title{
+    text-align: center;
+  }
+  
+  .a-des{
+    font-family: Ubuntu;
+    text-indent: 0px;
+    text-align: center;
+  }
+ 
+
+
+}
+
+/*ABOUT*/
+
+
+
+
 
 
 /*SERVICE STYLE START*/
 
 #service{
   padding: 50px;
+  background-color: #e9edf8;
 }
 
 .section_title{/*thurston title*/
@@ -213,7 +306,12 @@
 .s-icon{/*card container*/
   padding: 20px;
   }
-
+.s-box{
+  background-color: #fbfbfb ;
+  border-radius: 5%;
+  margin: 15px;
+  box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.2);
+}
 .s-icon .icon img {/*card icon*/
   height: 100px;
 }
@@ -241,10 +339,36 @@ hr {/* line*/
   margin: 0 auto;
 }
 
-.centered{
+.centered{/* center*/
   display: flex;
   justify-content: center;
 }
+
+.hoverit { /* HOVER*/
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.hoverit:hover { /* HOVER*/
+  transform: scale(1.09);
+}
+
+.hoverit:active {/* HOVER*/
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+
+.reveal{ /* REVEAL*/
+  position: relative;
+  transform: translateY(90px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active{ /* REVEAL*/
+  transform: translateY(0px);
+  opacity: 1;
+}
+
 
 /*SERVICE STYLE END*/
 
@@ -346,9 +470,140 @@ hr {/* line*/
 
 
 
+
+/*TEAM US START*/
+
+.yeah {
+  display: flex;
+  padding: 0 35px;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+  background: linear-gradient(to left top, #146898, rgb(3, 129, 255));
+}
+
+.wrapper {
+  max-width: 1100px;
+  width: 100%;
+  position: relative;
+}
+
+.t-title{
+  font-size: 58px;
+  color: #ffffff;
+  font-family: Ubuntu;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+  
+.wrapper i {
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapper i:active{
+  transform: translateY(-50%) scale(0.85);
+}
+.wrapper i:first-child{
+  left: -22px;
+}
+.wrapper i:last-child{
+  right: -22px;
+}
+.wrapper .carousel{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 4) - 5px);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+.carousel :where(.card, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel .card {
+  scroll-snap-align: start;
+  height: 342px;
+  list-style: none;
+  background: #fff;
+  cursor: pointer;
+  padding-bottom: 15px;
+  flex-direction: column;
+  border-radius: 8px;
+}
+.carousel .card .img {
+  background: #53bdff;
+  height: 148px;
+  width: 148px;
+  border-radius: 50%;
+}
+.card .img img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+}
+.carousel .card h2 {
+  font-weight: 500;
+  font-size: 1.56rem;
+  margin: 30px 0 5px;
+}
+.carousel .card span {
+  color: #6A6D78;
+  font-size: 1.31rem;
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
+}
+/*TEAM US END*/
+
+
+
+
 /*FOOTER US START*/
 .ft{/*footer custom*/
-  background-color: #494949;
+  background-color: #39487a;
   height: 80px;
   color: #ffffff;
   display: flex;
